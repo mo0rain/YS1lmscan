@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,jsonify
+from flask import Flask,render_template,request,jsonify,redirect
 from markupsafe import escape
 
 app = Flask(__name__,instance_relative_config=True , template_folder="templates")
@@ -6,7 +6,8 @@ app.debug = True
 
 @app.route("/")
 def index():
-    return "hello world"
+    # return "hello world"
+    return redirect("/login")
 
 
 
@@ -22,7 +23,7 @@ def test(name):
 
 @app.route("/login",methods=['GET', 'POST'])
 def login():
-    data = request.args
+    # data = request.args
     # print(data.get("name"))
     return render_template("login.html")
 
@@ -34,6 +35,8 @@ def admin():
         return render_template("admin.html")
     else:
         return "FALSE"
+
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",debug=True,port=5656)
