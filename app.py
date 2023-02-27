@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,jsonify,redirect
 from markupsafe import escape
 
-app = Flask(__name__,instance_relative_config=True , template_folder="templates")
+app = Flask(__name__,instance_relative_config=True , template_folder="templates",static_folder="web\static")
 app.debug = True
 
 @app.route("/")

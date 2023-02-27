@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#right {
+    border: 1px solid red;
+    width: 900px;
+    height: 600px;
+    float: right;
+    margin-right: 500px;
+
+
+}
+
+.box {
+    /* 超出部分隐藏 */
+    overflow: hidden;
+    display: flex;
+}
+
+.content {
+    width: 900px;
+    height: 600px;
+    flex-shrink: 0;
+}
