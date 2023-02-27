@@ -14,6 +14,9 @@ git add .
 git commit -m "xxx"
 git push -u origin main
 
+git add .;git commit -m "xx";git push -u origin main
+
+
 
 
 ## 项目启动
@@ -70,4 +73,5 @@ fscan(https://github.com/shadow1ng/fscan)
 - [ ] QingScan
 - [ ] 后台美化
 - [ ] 登录窗口美化
+- [ ] 项目结构优化
 

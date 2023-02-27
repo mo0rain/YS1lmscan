@@ -51,7 +51,7 @@ def add_student():
         addr = request.form['add']
         city = request.form['city']
         pin = request.form['pin']
-        with sqlite3.connect("database.db") as con:
+        with sqlite3.connect("web/static/db/database.db") as con:
            cur = con.cursor()
            cur.execute("INSERT INTO students (name,addr,city,pin) VALUES (?,?,?,?)",(nm,addr,city,pin))
            con.commit()
@@ -66,7 +66,7 @@ def add_student():
 # 查看数据
 @app.route("/show_db")
 def ShowDb():
-    con = sqlite3.connect("database.db")
+    con = sqlite3.connect("web/static/db/database.db")
     con.row_factory = sqlite3.Row
     cur = con.cursor()
     cur.execute("select * from students")
