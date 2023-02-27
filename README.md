@@ -1,10 +1,22 @@
-"# YS1lmscan" 
+
+# 项目
 
 
-
+## 搭建环境
 flash创建项目
 python3.7
 pip3.7
+
+
+## 部署到github
+上传到github
+git add .
+git commit -m "xxx"
+git push -u origin main
+
+
+
+## 项目启动
 
 E:\YS\YS1lmscan\flask-env\Scripts>
 
@@ -17,15 +29,6 @@ E:\YS\YS1lmscan\flask-env\Scripts\deactivate.bat
 
 
 
-
-上传到github
-git add .
-git commit -m "xxx"
-git push -u origin main
-
-
-
-
 启动项目
 flask run
 http://127.0.0.1:5000
@@ -34,8 +37,7 @@ python3.7 app.py
 
 
 
-
-
+# tools
 
 整合
 oneforall(https://github.com/shmilylty/OneForAll)
@@ -48,4 +50,24 @@ fscan(https://github.com/shadow1ng/fscan)
 
 
 
+
+
+# todo
+
+- [ ] fofa
+- [ ] shodan
+- [ ] kscan
+- [ ] goby
+- [ ] ARL灯塔
+- [ ] oneforall
+- [ ] ENScan_GO
+- [ ] xray
+- [ ] crawlergo
+- [ ] scaninfo
+- [ ] httpx
+- [ ] fscan
+- [ ] awvs
+- [ ] QingScan
+- [ ] 后台美化
+- [ ] 登录窗口美化
 
