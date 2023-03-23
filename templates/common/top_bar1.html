@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        #top_bar{
+            border: 1px solid saddlebrown;
+            width: 100%;
+            height: 40px;
+            background-color: aqua;
+        }
+
+        #logo{
+            float: left;
+            font-size: 30px;
+        }
+
+        #userbox{
+            position: relative;
+            display: inline-block;
+            float: right;
+            font-size: 30px;
+        }
+
+        #userbox-content{
+            display: none;
+            position: absolute;
+            font-size: 15px;
+            border: 1px solid blueviolet;
+        }
+
+        #userbox:hover #userbox-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="top_bar">
+        <div id="logo">YS1lmscan</div>
+        <div id="userbox">
+            <span>Admin</span>
+            <div id="userbox-content">
+                <p><a href="/logout">退出登录</a></p>
+        </div>
+    </div>
+
+    </div>
+    
+    
+</body>
+</html>

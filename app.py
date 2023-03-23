@@ -23,9 +23,22 @@ def test(name):
 
 @app.route("/login",methods=['GET', 'POST'])
 def login():
+    # 登录
     # data = request.args
     # print(data.get("name"))
     return render_template("login.html")
+
+
+@app.route("/logout",methods=['GET', 'POST'])
+def logout():
+    # 退出登录
+    # data = request.args
+    # print(data.get("name"))
+    # return render_template("login.html")
+    # return "退出成功"
+    return redirect("/login")
+
+
 
 @app.route("/admin",methods=['POST'])
 def admin():

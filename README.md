@@ -36,6 +36,8 @@ E:\YS\YS1lmscan\flask-env\Scripts\deactivate.bat
 flask run
 http://127.0.0.1:5000
 
+
+热启动，更改内容随之更改
 python3.7 app.py
 
 

@@ -14,7 +14,7 @@
         #login{
             margin: 0 auto;
             width: 500px;
-            margin-top: 200px;
+            margin-top: 100px;
             border: 1px solid red;
         }
         #login input{
@@ -24,12 +24,28 @@
             font-size: 20px;
         }
 
+        #login_title{
+            font-size: 50px;
+            /* border: 1px solid blueviolet; */
+            width: 250px;
+            margin: 0 auto;
+            margin-top: 60px;
+            color: orange;
+            text-shadow:  0px 0px 10px black;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
     
     <div id="main">
+
+        
         <div id="login">
+            <div id="login_title">
+                后台登录
+            </div>
             <form action="/admin" method="post">
                 <input type="text" name="username" placeholder="username" required="required">
                 <br />
